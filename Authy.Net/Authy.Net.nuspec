@@ -4,9 +4,9 @@
         <id>Authy.Net</id>
         <version>$version$</version>
         <title>Authy.Net</title>
-        <authors>Devin Martin</authors>
-        <owners>Devin Martin</owners>
-        <projectUrl>https://github.com/devinmartin/authy.net</projectUrl>
+        <authors>Devin Martin and Pittsburgh Pirates</authors>
+        <owners>Devin Martin and Pittsburgh Pirates</owners>
+        <projectUrl>https://github.com/PittsburghPirates/authy.net</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Simple client library for the Authy API.</description>
         <releaseNotes>1.1 Better token validation to improve security</releaseNotes>

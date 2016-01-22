@@ -58,6 +58,11 @@
     <None Include="Authy.Net.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName)==Release "$(SolutionDir)nuget" pack "$(ProjectPath)" -Symbols -Prop Configuration=Release
+if $(ConfigurationName)==Release xcopy /Y *.nupkg c:\pirates\nugetrepo\
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
